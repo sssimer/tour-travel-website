@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background: url(/images/newbg.jpg); */
+    /* background-color: #16514e; */
+    background-size: cover;
+    font-family: "Delius", serif;
+}
+.inside{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+}
+.container h1{
+    justify-content: center;
+    display: flex;
+    color: #206864;
+}
+.container h3{
+    justify-content: center;
+    display: flex;
+}
+.formbox{
+    justify-content: center;
+    display: flex;
+    padding: 20px 0;
+}
+.form{
+    border: 4px solid #feca08;
+}
+.formbox p{
+    font-weight: bold;
+    color: #206864;
+}
+
+.formbox input[type="text"],
+.formbox input[type="password"]
+{
+    border: none;
+    border-bottom: 2px solid #206864;
+    outline: none;
+    height: 40px;
+}
+.formbox input[type="text"]:focus,
+.formbox input[type="password"]:focus
+{
+    border-bottom: 2px solid #feca08;
+}
+
+
+
+.btn
+{
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+    background: #206864;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    background: #feca08;
+    color: #206864;
+}
+.formbox p a{
+    text-decoration: none;
+    color: #feca08;
+}
+.formbox p a:hover{
+    color: #16514e;
+}

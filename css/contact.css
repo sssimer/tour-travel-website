@@ -1,0 +1,120 @@
+body{
+    font-family: "Delius", serif;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[name="message"],
+select,
+.submit{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea{
+    resize: none;
+}
+
+.submit{
+    background-color: #206864;
+    color: white;
+    cursor: pointer;
+    font-family: "Delius", serif;
+    text-decoration: none;
+}
+
+.submit:hover{
+    background-color: #feca08;
+}
+
+.button{
+    text-align: center;
+}
+.btn{
+    font-family: "Delius", serif;
+    background-color: #206864;
+    font-size: 20px;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #feca08;
+}
+
+@media  screen and (max-width: 858px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+.service{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #206864;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10%;
+}
+#footer1{
+    padding: 0 20px;
+    width: 60%;
+    margin-left: 20px;
+}
+#footer1 h5{
+    color: #fff;
+}
+
+#footer2{
+    padding: 0 20px;
+    width: 20%;
+}
+#footer2 h5{
+    justify-content: center;
+    display: flex;
+}
+
+#footer3{
+    padding: 0 20px;
+    width: 20%;
+}
+#footer3 h5{
+    justify-content: center;
+    display: flex;
+}
+
+.listitem{
+    display: flex;
+}
+.list{
+    list-style: none;
+}
+.list li a{
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.rights{
+    padding: 10px;
+}
+.text-center a{
+    color: #fff;
+    text-decoration: none;
+}
+.text-center{
+    justify-content: center;
+    display: flex;
+}
+
+

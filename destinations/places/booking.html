@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius&family=Playwrite+CO:wght@100..400&display=swap');
+    </style>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    
+
+    <div class="container">
+            <h1>Choose Your Time & Book Now</h1>
+
+    <div class="inside">
+
+    <form action="book.php" method="post" >
+    
+    <div class="guest">
+        <h3>Guest Information</h3>
+        <label for="name">Name:&nbsp;</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:&nbsp;</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Mobile:&nbsp;</label>
+        <input type="tel" name="phone" id="phone" required><br><br>
+
+        <label for="message">Any Special Requests:&nbsp;</label>
+        <textarea name="message" id="message"></textarea>
+    </div>
+
+    <br>
+
+    <div class="selection">
+        <h3>Tour Information</h3>
+        <label for="indate">Check-in Date:&nbsp;</label>
+        <input type="date" name="indate" id="indate" required min="<?= date('Y-m-d'); ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label for="outdate">Check-out Date:&nbsp;</label>
+        <input type="date" name="outdate" id="outdate" required min="<?= date('Y-m-d'); ?>"><br><br>
+
+        <label for="number">Number Of Guests:&nbsp;</label>
+        <input type="number" name="number" id="number">
+    </div>
+
+    <br><br>
+
+        <div class="input-container">
+            <select name="destination" id="destination">
+                <option value disabled selected >Select Your Destination</option>
+                
+                <option value="ladakh">Untamed Ladakh</option>
+                <option value="heaven">Heaven On Earth</option>
+                <option value="manali">Manali</option>
+                <option value="houseboat">Cochin-Kumarakom-Houseboat-Cochin</option>
+                <option value="kanyakumari">Cochin-Kumarakom-Houseboat-Kovalam-Kanyakumari-Trivandrum</option>
+                <option value="serene">Serene Coorg and Wayanad</option>
+            </select>&nbsp;&nbsp;
+
+            <select name="room" id="room">
+                <option value disabled selected >Type Of Room</option>
+                
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="family">Family Room</option>
+                <option value="suite">Suite</option>
+                <option value="executive">Executive Room</option>
+                <option value="honeymoon">Honeymoon Room</option>
+                <option value="accessible">Accessible Room</option>
+            </select>
+         </div>
+         <br><br>
+    
+         <div class="button"><button class="submit" type="submit" >Next</button></div>
+
+
+    
+
+
+    </form>
+</div>
+           
+       
+    </div>
+
+
+</body>
+</html>

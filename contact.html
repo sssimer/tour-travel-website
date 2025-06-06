@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius&family=Playwrite+CO:wght@100..400&display=swap');
+        </style>
+   
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h2>Connect With Us</h2>
+        <form action="contact.php" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Mobile:</label>
+            <input type="tel" name="phone" id="phone" required><br><br> 
+
+            <div class="input-container">
+                <select name="destination" id="destination">
+                    <option value disabled selected >Select Your Destination</option>
+                    
+                    <option value="jammu&kashmir">Jammu & Kashmir</option>
+                    <option value="himachalpradesh">Himachal Pradesh</option>
+                    <option value="kerala">Kerala</option>
+                    
+                </select>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea><br><br>
+               
+           <a href="index.html"> <button class="submit" type="submit" >Send Message</button></a>
+         
+        
+        </form>
+    </div>
+    </div><br><br>
+    <div class="button">
+        <a href="index.html"> <Button class="btn text-muted  px-3 rounded-0"  >Back To Main Page</Button></a> 
+    </div>
+
+    <section class="service">
+
+      <div class="end">
+        <div class="listitem">
+
+        <div class="col-lg-6" id="footer1">
+            <h5 class="text-light">About Us</h5>
+            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae tempora atque
+              corporis
+              quas, quod cumque nesciunt debitis autem. Labore, modi!</p>
+            <p class="text-light"><i class="fa fa-location"></i>123 456 897</p>
+            <p class="text-light"><i class="fa fa-phone"></i>(+91)999-888-7777</p>
+            <p class="text-light">
+              <i class="fa fa-envelope"></i>breezystays@gmail.com
+            </p>
+          </div>
+
+          <div class="col-lg-3" id="footer2">
+            <h5 class="text-light">
+              Quick Links
+            </h5>
+            <ul class="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#destinations">Destinations</a></li>
+              <li><a href="#signatureexperiences">Signature Experiences</a></li>
+              <li><a href="travel.html">Travel Buzz</a></li>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="contact.html">ConnectWith Us</a></li>
+              <li><a href="log.html">Login</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3" id="footer3">
+            <h5 class="text-light">
+              Stay Connected
+            </h5>
+            <ul class="list">
+              <li><a href="#"><i class="fab fa-facebook"></i> FaceBook</a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+          
+        <hr>
+        <div class="rights">
+          <div class="col-lg-12">
+            <p class="text-center text-light">
+              Copyright &copy; 2025 <a href="../index.html">Breezy Stays</a> All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+</body>
+</html>
